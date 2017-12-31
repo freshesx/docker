@@ -1,7 +1,22 @@
-### yarn
+# freshes/yarn
 
-Use `yarn Dockerfile` to configure node environment, and set china mirrors.
+<p>
+  <img src="http://dockeri.co/image/freshes/yarn"></img>
+</p>
 
-### build
+Designed for freshes applications. Configure node environment, and set china mirrors.
 
-Use `build Dockerfile` extend `yarn Dockerfile` to run the package.json build script.
+### Open workspace
+``` bash
+docker run --rm -it -v $(pwd):/workspace freshes/yarn bash
+```
+
+### Yarn build
+``` bash
+docker run --rm -it -v $(pwd):/workspace freshes/yarn yarn run build
+```
+
+### Yarn install and build
+``` bash
+docker run --rm -it -v $(pwd):/workspace freshes/yarn sh -c 'yarn && yarn run build'
+```
