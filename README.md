@@ -1,10 +1,8 @@
 # freshes/yarn
 
-<p>
-  <img src="http://dockeri.co/image/freshes/yarn"></img>
-</p>
+Designed for freshes applications.
 
-Designed for freshes applications. Configure node environment, and set china mirrors.
+This docker package use node 8.9 LTS version (Carbon). And set some chinese mirrors.
 
 ### Open workspace
 ``` bash
